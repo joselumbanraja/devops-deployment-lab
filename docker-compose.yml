@@ -1,0 +1,18 @@
+services:
+
+  app:
+    build:
+      context: ./app
+      dockerfile: Dockerfile
+
+    container_name: devops-lab-app
+
+    ports:
+      - "3000:3000"
+
+    environment:
+      PORT: 3000
+      ENVIRONMENT: development
+      APP_VERSION: "1.0.0"
+
+    restart: unless-stopped
