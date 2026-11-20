@@ -1,4 +1,4 @@
-name : CI
+name : ci
 
 on:
   push:
@@ -36,7 +36,7 @@ on:
           run: npm ci
 
         - name: Run test
-          run: npm test
+          run: npm testt
 
         - name: Build Docker Image
           run: |
